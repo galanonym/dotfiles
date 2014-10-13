@@ -1,0 +1,8 @@
+[user]
+    name = Matteus
+    email = matteus@eliteboard.no
+[color]
+    ui = true
+[alias]
+    st = status
+    l = log -n15 --graph --decorate --oneline --abbrev-commit --all
