@@ -8,3 +8,5 @@
     l = log -n15 --graph --decorate --oneline --abbrev-commit --all
 [credential "https://github.com"]
     username = galanonym
+[core]
+	editor = vim
