@@ -10,4 +10,8 @@ Add to ~/.bashrc to use this file
 
 Add soft link to .gitconfig
 
-    ln -s ~/dotfiles/gitconfig .gitconfig
+    ln -s ~/dotfiles/gitconfig ~/.gitconfig
+
+Add soft link to i3 config
+    
+    ln -s ~/dotfiles/i3config ~/.i3/config
