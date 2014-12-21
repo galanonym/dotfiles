@@ -14,7 +14,7 @@ set $mod Mod1
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Ubuntu Mono 12
+font pango:Ubuntu Mono 0
 # setting font as 0 disables titles in window bars
 # set font in bar {} block to 8 so it still has nice font
 # Before i3 v4.8, we used to recommend this one as the default:
@@ -200,5 +200,5 @@ exec --no-startup-id i3-msg 'workspace 2:vim; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace 3:ff; exec firefox'
 
 # Autostart Applets
-exec --no-startup-id nm-applet
-exec --no-startup-id gnome-sound-applet
+exec_always --no-startup-id nm-applet
+exec_always --no-startup-id gnome-sound-applet
