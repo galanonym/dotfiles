@@ -9,3 +9,9 @@ alias ls="ls -lahF --color=auto" #show hidden, detailed, colored
 setxkbmap us -variant colemak
 
 export EDITOR=vim
+
+# add node export path so -g flag works without sudo
+export PATH="$PATH:$HOME/npm/bin"
+
+# add dotfiles export path for my own bash scripts
+export PATH="$PATH:$HOME/dotfiles/bin"
