@@ -172,7 +172,7 @@ bar {
 bindsym $mod+x move workspace to output right
 
 # Lock screen
-bindsym $mod+Shift+o exec "gnome-screensaver-command --lock"
+bindsym $mod+Shift+o exec "xscreensaver-command -lock"
 
 # To add a monitor
 # >xrandr 
