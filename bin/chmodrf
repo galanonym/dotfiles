@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# usage >chmodrd
+echo Changing all files in this folder to 0664 recursively...
+find . -type f -print0 | xargs -0 chmod 0664 

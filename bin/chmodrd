@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# usage >chmodrd
+echo Changing all dirs in this folder to 0775 recursively...
+find . -type d -print0 | xargs -0 chmod 0775
