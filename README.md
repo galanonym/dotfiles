@@ -1,5 +1,7 @@
 ### Installation
 Run git clone in ~ folder.
+    
+    git clone https://github.com/galanonym/dotfiles.git
 
 ### Usage
 Add to ~/.bashrc to use this file
