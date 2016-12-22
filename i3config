@@ -206,7 +206,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 
 # Background image
 # >sudo apt-get install feh 
-exec feh --bg-scale ~/wallpaper.png
+exec feh --bg-scale ~/wallpaper.jpg
 
 # Autostart Apps in workspaces
 exec --no-startup-id i3-msg 'workspace 1:term; exec i3-sensible-terminal, exec i3-sensible-terminal'
