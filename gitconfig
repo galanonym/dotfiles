@@ -10,3 +10,5 @@
     username = galanonym
 [core]
 	editor = vim
+[push]
+    default = simple
