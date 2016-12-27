@@ -178,7 +178,7 @@ bindsym $mod+Shift+o exec "gnome-screensaver-command --lock"
 
 # To add a monitor
 # >xrandr 
-# >xrandr --output DVI-0 --auto --right-of LVDS-0  
+# >xrandr --output HDMI-1-1 --auto --right-of LVDS-1-1
 #
 # After removing
 # >xrandr --auto
