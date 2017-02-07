@@ -3,6 +3,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ls="ls -lahF --color=auto" #show hidden, detailed, colored
+alias dirs="dirs -v" #show pushd stack, use >cd ~1
 
 # colemak keyboard layout in command line
 # fixes keypassx autotype bug
@@ -15,3 +16,9 @@ export PATH="$PATH:$HOME/npm/bin"
 
 # add dotfiles export path for my own bash scripts
 export PATH="$PATH:$HOME/dotfiles/bin"
+
+# add support for ctrl-s for history search
+stty -ixon
+
+# remove duplicates from history
+export HISTCONTROL=ignoreboth:erasedups

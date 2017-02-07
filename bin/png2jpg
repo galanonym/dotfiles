@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# usage >pwdgrep wordToFindInFilesInCurrentDirRecursive
+echo Converting all files to .jpg
+mogrify -format jpg ./*.png
+echo Deleting old .png files
+rm -I ./*.png
