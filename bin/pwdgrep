@@ -2,4 +2,4 @@
 
 # usage >pwdgrep wordToFindInFilesInCurrentDirRecursive
 echo Searching for word in current directory recursive: $1
-grep -rnw '.' --color=always -e $1
+grep -rnF '.' --color=always -e $1
