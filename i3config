@@ -219,3 +219,6 @@ exec --no-startup-id i3-msg 'workspace 3:ff; exec firefox'
 # Autostart Applets
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id gnome-sound-applet
+
+# Redshift
+exec --no-startup-id redshift -l 50.36:20.03
