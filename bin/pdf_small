@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# usage > pdf_small file-to-compress.pdf
+# makes file > file-to-compress_small.pdf 
+
+set -e 
+# Any subsequent(*) commands which fail will cause the shell script to exit immediately
+
+#check if passed argument is a file
+if [ ! -f "$1" ]; then
+    echo "First argument must be a valid file: ${1}"
+    exit 1
+fi
+
+file_with_extension=$1
+file=${file_with_extension::-4}
+
+echo Backing up file to ${file}_old.pdf
+mv ${file_with_extension} ${file}_old.pdf
+
+echo Compressing to ${file}.pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${file}.pdf ${file}_old.pdf
+exit 1
