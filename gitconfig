@@ -10,5 +10,8 @@
     username = galanonym
 [core]
 	editor = vim
+	compression = 0
 [push]
     default = simple
+[http]
+	postBuffer = 157286400
