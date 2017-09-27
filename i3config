@@ -214,7 +214,7 @@ exec feh --bg-scale ~/wallpaper.jpg
 # Autostart Apps in workspaces
 exec --no-startup-id i3-msg 'workspace 1:term; exec i3-sensible-terminal, exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace 2:vim; exec i3-sensible-terminal'
-exec --no-startup-id i3-msg 'workspace 3:ff; exec firefox'
+exec --no-startup-id i3-msg 'workspace 3:ff; exec firefox-developer'
 
 # Autostart Applets
 exec_always --no-startup-id nm-applet
