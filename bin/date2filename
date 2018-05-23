@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# usage >date2filename 
+# will take all .mp3 files in folder, and copy them to /generated/ with their names proceeded by a date
+
+for filename in ./*.mp3; do
+  created_date="$(stat -c %y "$filename")"
+  trimmed=${created_date::-16}
+  no_whitespace=${trimmed/ /_}
+  no_collon=${no_whitespace/:/_}
+  no_collon2=${no_collon/:/_}_
+  file=${filename:2}
+  new=$no_collon2$file
+  mkdir -p generated
+  cp "$filename" "./generated/$new"
+  echo Copied $filename to ./generated/$new
+done
