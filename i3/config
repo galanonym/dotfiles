@@ -171,6 +171,9 @@ bindsym $mod+r mode "resize"
 # M: Set window borders
 new_window pixel 4
 
+# M: Hide edges on workspaces with one window
+hide_edge_borders smart
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # M: My own i3bar config
@@ -233,13 +236,23 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # >sudo apt-get install feh 
 exec feh --bg-scale ~/wallpaper.jpg
 
+# M: Assign some app's to workspaces
+# You can check class of a window by >xprop then click window and read WM_CLASS second part
+assign [class="Firefox"] "3:ff"
+assign [class="Chromium-browser"] "4:ch"
+assign [class="Keepassx"] "5:kee"
+assign [class="Filezilla"] "7:fz"
+assign [class="Gedit"] "8:ge"
+assign [class="GIMP"] "10:gi"
+
 # M: Autostart Apps in workspaces
 exec --no-startup-id i3-msg 'workspace 1:t; exec i3-sensible-terminal; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace 2:vim; exec i3-sensible-terminal'
-# exec --no-startup-id i3-msg 'workspace 3:ff; exec firefox'
+exec --no-startup-id i3-msg 'exec firefox;'
+exec --no-startup-id i3-msg 'exec keepassx;'
+exec --no-startup-id i3-msg 'workspace 5:kee;'
+exec --no-startup-id i3-msg 'workspace 3:ff;'
 
-# M: Assign some app's to workspaces
-assign [class="Firefox"] "3:ff"
 
 # M: Autostart Applets
 exec_always --no-startup-id nm-applet
