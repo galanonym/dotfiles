@@ -11,6 +11,7 @@
 [core]
 	editor = vim
 	compression = 0
+  pager = less -+$LESS -FRX
 [push]
     default = simple
 [http]
