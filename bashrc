@@ -1,9 +1,9 @@
 # my c00l aliases
 
-alias ..='cd ..'
-alias ...='cd ../..'
+alias ..="cd .."
+alias ...="cd ../.."
 alias ls="ls -lahF --color=auto" #show hidden, detailed, colored
-alias dirs="dirs -v" #show pushd stack, use >cd ~1
+alias grep="grep --color" 
 
 # colemak keyboard layout in command line
 # fixes keypassx autotype bug
