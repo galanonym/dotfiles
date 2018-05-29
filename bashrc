@@ -7,7 +7,7 @@ alias dirs="dirs -v" #show pushd stack, use >cd ~1
 
 # colemak keyboard layout in command line
 # fixes keypassx autotype bug
-setxkbmap us -variant colemak
+# setxkbmap us -variant colemak
 
 export EDITOR=vim
 
@@ -16,9 +16,6 @@ export PATH="$PATH:$HOME/npm/bin"
 
 # add dotfiles export path for my own bash scripts
 export PATH="$PATH:$HOME/dotfiles/bin"
-
-# add support for ctrl-s for history search
-stty -ixon
 
 # remove duplicates from history
 export HISTCONTROL=ignoreboth:erasedups
