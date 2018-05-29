@@ -112,7 +112,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # M: workspace names
-set $1 "1:ter"
+set $1 "1:term"
 set $2 "2:vim"
 set $3 "3:ff"
 set $4 "4:?"
