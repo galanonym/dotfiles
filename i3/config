@@ -268,9 +268,9 @@ exec --no-startup-id i3-msg 'workspace $1; exec i3-sensible-terminal; exec i3-se
 exec --no-startup-id i3-msg 'workspace $2; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'exec firefox;'
 exec --no-startup-id i3-msg 'exec keepassx;'
-exec --no-startup-id i3-msg 'workspace $6;'
-exec --no-startup-id i3-msg 'exec nautilus --no-desktop --new-window;'
-exec --no-startup-id i3-msg 'exec nautilus --no-desktop --new-window;'
+exec --no-startup-id i3-msg 'workspace $5;'
+# exec --no-startup-id i3-msg 'exec nautilus --no-desktop --new-window;'
+# exec --no-startup-id i3-msg 'exec nautilus --no-desktop --new-window;'
 
 # M: Autostart Applets
 exec_always --no-startup-id nm-applet
