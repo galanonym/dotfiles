@@ -16,3 +16,4 @@
     default = simple
 [http]
 	postBuffer = 157286400
+	sslVerify = false
