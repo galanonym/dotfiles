@@ -221,8 +221,11 @@ bindsym $mod+x move workspace to output right
 # Just press Ctrl+Alt+F1
 
 # M: To add a monitor
-# >xrandr 
+# >randr 
 # >xrandr --output HDMI-1-1 --auto --right-of LVDS-1-1
+#
+# To mirror displays
+# >xrandr --output HDMI-1 --same-as LVDS-1
 #
 # After removing
 # >xrandr --auto
