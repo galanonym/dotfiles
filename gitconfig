@@ -6,6 +6,7 @@
 [alias]
     st = status
     l = log -n15 --graph --decorate --oneline --abbrev-commit --all
+    up = pull --rebase --autostash
 [credential "https://github.com"]
     username = galanonym
 [core]

@@ -4,6 +4,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ls="LC_COLLATE=C ls -lahF --color=auto" #show hidden, detailed, colored
 alias grep="grep --color" 
+alias rg="rg --context 2 --smart-case"
 
 # colemak keyboard layout in command line
 # fixes keypassx autotype bug
