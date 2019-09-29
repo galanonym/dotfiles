@@ -2,7 +2,7 @@
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias ls="LC_COLLATE=C ls -lahF --color=auto" #show hidden, detailed, colored
+alias ls="LC_COLLATE=C ls -lahF --color=auto --quoting-style=literal" #show hidden, detailed, colored, without quotes
 alias grep="grep --color" 
 
 # colemak keyboard layout in command line
