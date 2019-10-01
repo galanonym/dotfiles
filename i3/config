@@ -62,10 +62,16 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
+
+#M: resize window by using arrows
+bindsym $mod+Right resize shrink width 5 px or 5 ppt
+bindsym $mod+Down resize grow height 5 px or 5 ppt
+bindsym $mod+Up resize shrink height 5 px or 5 ppt
+bindsym $mod+Left resize grow width 5 px or 5 ppt
 
 # M: move focused window
 bindsym $mod+Shift+$left move left
@@ -83,10 +89,10 @@ bindsym $mod+Shift+Right move right
 # bindsym $mod+h split h
 
 # M: split in horizontal orientation (because $mod+h is taken)
-bindsym $mod+n split h
+bindsym $mod+v split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+s split v
 
 # enter fullscreen mode for the focused container
 # bindsym $mod+t fullscreen toggle
@@ -95,7 +101,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # M: change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+n layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+i layout toggle split
 
