@@ -6,7 +6,7 @@
 [alias]
     st = status
     l0 = log -n15 --graph --decorate --oneline --abbrev-commit --all
-    l = log -n15 --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(dim white)%an%C(reset) %C(normal)%s%C(reset) %C(bold blue)(%ar)%C(reset)' --all
+    l = log -n25 --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(dim white)%an%C(reset) %C(normal)%s%C(reset) %C(bold blue)(%ar)%C(reset)' --all
     up = pull --rebase --autostash
 [credential "https://github.com"]
     username = galanonym
