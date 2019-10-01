@@ -101,8 +101,8 @@ bindsym $mod+s split v
 bindsym $mod+f fullscreen toggle
 
 # M: change container layout (stacked, tabbed, toggle split)
-bindsym $mod+n layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+n layout stacking # M: do not use other layouts
+#bindsym $mod+w layout tabbed # M: do not use other layouts
 bindsym $mod+i layout toggle split
 
 # toggle tiling / floating
@@ -115,7 +115,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
 # M: workspace names
 set $1 "1:term"
