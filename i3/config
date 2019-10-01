@@ -68,10 +68,10 @@ bindsym $mod+$right focus right
 # bindsym $mod+Right focus right
 
 #M: resize window by using arrows
-bindsym $mod+Right resize shrink width 5 px or 5 ppt
+bindsym $mod+Left resize shrink width 5 px or 5 ppt
 bindsym $mod+Down resize grow height 5 px or 5 ppt
 bindsym $mod+Up resize shrink height 5 px or 5 ppt
-bindsym $mod+Left resize grow width 5 px or 5 ppt
+bindsym $mod+Right resize grow width 5 px or 5 ppt
 
 # M: move focused window
 bindsym $mod+Shift+$left move left
