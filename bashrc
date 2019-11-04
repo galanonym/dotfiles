@@ -20,3 +20,6 @@ export PATH="$PATH:$HOME/dotfiles/bin"
 
 # remove duplicates from history
 export HISTCONTROL=ignoreboth:erasedups
+
+#setup fzf to use rg and ignore hidden files with . and from .gitignore
+#export FZF_DEFAULT_COMMAND='rg --files --follow --hidden --bind ctrl-a:select-all,ctrl-d:deselect-all'
