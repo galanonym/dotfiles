@@ -20,4 +20,11 @@ mv ${file_with_extension} ${file}_old.pdf
 
 echo Compressing to ${file}.pdf
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${file}.pdf ${file}_old.pdf
+
+read -r -p "Delete original file? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
+then
+    rm -f ${file}_old.pdf
+    echo Deleting ${file}_old.pdf
+fi
 exit 1

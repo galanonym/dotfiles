@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# install youtube-dl through direct download by instruction https://github.com/ytdl-org/youtube-dl
+
 # usage >ydownload http://youtube.com/video?id=xetsner
 # check if passed argument
 if [ -z "$1" ]; then
@@ -8,5 +10,5 @@ if [ -z "$1" ]; then
 fi  
 
 echo Downloading youtube: $1
-youtube-dl --output "%(title)s.%(ext)s" --no-mtime --extract-audio --audio-format mp3 $1
+/usr/local/bin/youtube-dl --output "%(title)s.%(ext)s" --no-mtime --extract-audio --audio-format mp3 $1
 exit 1

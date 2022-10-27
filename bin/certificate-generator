@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# will create parsed pdf
+# certificate-generator --company 'Ertesvåg Konsult' --org '915 742 963' --name 'Eivind Ertesvåg' --start '2019.01.14' --end '2019.01.15' --project 'Sharebare Wordpress plugin for sosialnytt.no'
+
+node /home/galh/node/certificate-generator/app.js "$@" 

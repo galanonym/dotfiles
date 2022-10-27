@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Open file explorer window from current directory
+xdg-open .
