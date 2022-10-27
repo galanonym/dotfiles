@@ -17,3 +17,7 @@ Add soft link to .gitconfig
 Add soft link to i3 config
     
     ln -s ~/dotfiles/i3/config ~/.config/i3/config
+
+Add soft link to .Xresources
+
+    ln -s ~/dotfiles/xterm/Xresources ~/.Xresources

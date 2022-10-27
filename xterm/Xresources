@@ -1,0 +1,52 @@
+xterm*termName: xterm-256color
+xterm*faceName: UbuntuMono Nerd Font:style=Regular
+xterm*faceSize: 13
+xterm*cursorBlink: true
+
+Xft.antialias: 1
+Xft.autohint: 1
+Xft.hintstyle: hintslight
+
+!xterm*color0:    #1B2B34
+!xterm*color1:    #343D46
+!xterm*color2:    #EC5F67
+!xterm*color3:    #EC5F67
+!xterm*color4:    #99C794
+!xterm*color5:    #99C794
+!xterm*color6:    #FAC863
+!xterm*color7:    #FAC863
+!xterm*color8:    #6699CC
+!xterm*color9:    #6699CC
+!xterm*color10:   #C594C5
+!xterm*color11:   #C594C5
+!xterm*color12:   #5FB3B3
+!xterm*color13:   #5FB3B3
+!xterm*color14:   #A7ADBA
+!xterm*color15:   #D8DEE9
+!xterm*foreground:#CDD3DE
+!xterm*background:#1B2B34
+
+xterm*color0:   #2E3436
+xterm*color1:   #CC0000
+xterm*color2:   #4E9A06
+xterm*color3:   #C4A000
+xterm*color4:   #3465A4
+xterm*color5:   #75507B
+xterm*color6:   #06989A
+xterm*color7:   #D3D7CF
+xterm*color8:   #555753
+xterm*color9:   #EF2929
+xterm*color10:  #8AE234
+xterm*color11:  #FCE94F
+xterm*color12:  #729FCF
+xterm*color13:  #AD7FA8
+xterm*color14:  #34E2E2
+xterm*color15:  #EEEEEC
+xterm*foreground:#FFFFFF
+xterm*background:#300a24
+
+!Make copy paste work
+XTerm*selectToClipboard: false
+xterm*VT100.Translations: #override \
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
