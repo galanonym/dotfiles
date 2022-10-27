@@ -3,29 +3,14 @@ xterm*faceName: UbuntuMono Nerd Font:style=Regular
 xterm*faceSize: 13
 xterm*cursorBlink: true
 
-Xft.antialias: 1
-Xft.autohint: 1
-Xft.hintstyle: hintslight
+! Make bold colors work correctly with 16 colors / darker on bold
+xterm*boldColors: false
+!xterm*allowBoldFonts: true
 
-!xterm*color0:    #1B2B34
-!xterm*color1:    #343D46
-!xterm*color2:    #EC5F67
-!xterm*color3:    #EC5F67
-!xterm*color4:    #99C794
-!xterm*color5:    #99C794
-!xterm*color6:    #FAC863
-!xterm*color7:    #FAC863
-!xterm*color8:    #6699CC
-!xterm*color9:    #6699CC
-!xterm*color10:   #C594C5
-!xterm*color11:   #C594C5
-!xterm*color12:   #5FB3B3
-!xterm*color13:   #5FB3B3
-!xterm*color14:   #A7ADBA
-!xterm*color15:   #D8DEE9
-!xterm*foreground:#CDD3DE
-!xterm*background:#1B2B34
+! Make cursor change background in vim
+xterm*cursorColor: *XtDefaultForeground
 
+!Tango colorscheme
 xterm*color0:   #2E3436
 xterm*color1:   #CC0000
 xterm*color2:   #4E9A06
@@ -46,7 +31,7 @@ xterm*foreground:#FFFFFF
 xterm*background:#300a24
 
 !Make copy paste work
-XTerm*selectToClipboard: false
+xterm*selectToClipboard: false
 xterm*VT100.Translations: #override \
   Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
   Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
