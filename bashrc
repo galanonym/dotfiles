@@ -3,14 +3,18 @@
 alias ..="cd .."
 alias ...="cd ../.."
 alias ls="LC_COLLATE=C ls -lahF --color=auto --quoting-style=literal" #show hidden, detailed, colored, without quotes
-alias grep="grep --color" 
+alias grep="grep --color"
 alias rg="rg --context 2 --smart-case"
+
+# Ranger
+#alias r="source ranger"
+alias r='ranger --cmd="chain tab_new; enter_bookmark 1; tab_open 1" --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 # colemak keyboard layout in command line
 # fixes keypassx autotype bug
 # setxkbmap us -variant colemak
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # add node export path so -g flag works without sudo
 export PATH="$PATH:$HOME/npm/bin"
