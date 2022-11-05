@@ -35,6 +35,12 @@ View
     R - Refresh current directory
     i - Inspect file in ranger
 
+    ob - Sort by basename
+    oc - Sort by creation time
+    ot - Sort by type
+    oe - Sort by extension
+    os - Sort by size
+
 File editing
 
     F7 - New directory
@@ -88,7 +94,7 @@ Bookmarks
     `<key> - Go to bookmark
     :edit ~/.local/share/ranger/bookmarks - Edit bookmarks
 
-Archieve
+Archieve (plugin)
 
     :extract - Extract marked .zip(s) to here (plugin)
     :extract_dirs - Extract marked .zip(s) to directories (plugin)
@@ -99,4 +105,4 @@ Auto open 3 tabs with bookmarks
     You can add startup commands in "r" alias in bashrc in dotfiles
 
 Sort marked first, hidden last
-More file info in main pane
+jore file info in main pane
