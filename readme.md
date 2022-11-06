@@ -29,10 +29,6 @@ Ranger
     sudo apt install ranger
     ranger --copy-config=all
 
-Image previews
-
-    sudo apt install ffmpegthumbnailer
-
 Add soft link to ranger configs
     
     mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.backup
@@ -42,11 +38,14 @@ Add soft link to ranger configs
     mkdir -p ~/.config/ranger/plugins
     ln -s ~/dotfiles/ranger/plugins/unicode_icons.py ~/.config/ranger/plugins/unicode_icons.py
 
-Gnome Nautilus Context Menu
+Trash support
 
-    sudo apt install python-nautilus python3-nautilus
-    Use system install from: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-    
+    sudo apt install trash-cli
+
+Image previews
+
+    sudo apt install ffmpegthumbnailer
+
 Text file previews
 
     Install bat from https://github.com/sharkdp/bat#installation with *_amd64.deb package
@@ -57,3 +56,13 @@ Archieve
 
     sudo apt install atool
     https://github.com/maximtrp/ranger-archives
+
+Dragging files
+
+    Install from https://github.com/mwh/dragon
+
+Gnome Nautilus Context Menu
+
+    sudo apt install python-nautilus python3-nautilus
+    Use system install from: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+    
