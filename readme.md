@@ -35,8 +35,8 @@ Image previews
 
 Add soft link to ranger configs
     
-    cp ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.backup
-    cp ~/.config/ranger/rifle.conf ~/.config/ranger/rifle.conf.backup
+    mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.backup
+    mv ~/.config/ranger/rifle.conf ~/.config/ranger/rifle.conf.backup
     ln -s ~/dotfiles/ranger/rifle.conf ~/.config/ranger/rifle.conf
     ln -s ~/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
     mkdir -p ~/.config/ranger/plugins
