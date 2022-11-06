@@ -25,6 +25,7 @@ Add soft link to i3 config
 ### Ranger Installation
 
 Run
+
     sudo apt install ranger
     sudo apt install ffmpegthumbnailer
     sudo apt install atool
