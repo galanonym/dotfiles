@@ -24,10 +24,14 @@ Add soft link to i3 config
 
 ### Ranger Installation
 
-Run
+Ranger
 
-    sudo apt install ranger ffmpegthumbnailer atool bat
+    sudo apt install ranger
     ranger --copy-config=all
+
+Image previews
+
+    sudo apt install ffmpegthumbnailer
 
 Add soft link to ranger configs
     
@@ -51,4 +55,5 @@ Text file previews
 
 Archieve
 
+    sudo apt install atool
     https://github.com/maximtrp/ranger-archives
