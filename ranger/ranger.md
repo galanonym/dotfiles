@@ -1,25 +1,3 @@
-# Installation
-
-Gnome Nautilus Context Menu
-
-    sudo apt install python-nautilus python3-nautilus
-    Use system install from: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-    
-
-Text file previews
-
-    Install bat from https://github.com/sharkdp/bat#installation with .deb package
-    Change --style="numbers" for bat in scope.sh
-
-Other file previews
-
-    > sudo apt install ffmpegthumbnailer
-    > sudo apt install atool
-
-Archieve
-
-    https://github.com/maximtrp/ranger-archives
-
 # Ranger commands
 
 View
