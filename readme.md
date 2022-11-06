@@ -49,7 +49,7 @@ Gnome Nautilus Context Menu
     
 Text file previews
 
-    Install bat from https://github.com/sharkdp/bat#installation with .deb package
+    Install bat from https://github.com/sharkdp/bat#installation with *_amd64.deb package
     mkdir -p ~/.config/bat && ln -s ~/dotfiles/bat/config ~/.config/bat/config
     Change --style="numbers" for bat in ~/.config/ranger/scope.sh
 
