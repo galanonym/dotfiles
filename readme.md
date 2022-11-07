@@ -64,5 +64,9 @@ Dragging files
 Gnome Nautilus Context Menu
 
     sudo apt install python-nautilus python3-nautilus
-    Use system install from: https://github.com/Stunkymonkey/nautilus-open-any-terminal
-    
+    Use user install from: https://github.com/Stunkymonkey/nautilus-open-any-terminal
+        pip install --user nautilus-open-any-terminal
+        nautilus -q
+        glib-compile-schemas ~/.local/share/glib-2.0/schemas/
+        Set terminal to alacritty via dconf-editor com/github/stunkymonkey/nautilus-open-any-terminal/terminal
+        Do not use .sh install scripts
