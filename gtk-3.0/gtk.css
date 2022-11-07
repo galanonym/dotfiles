@@ -1,0 +1,9 @@
+/*
+  Patch for xdotools and wrong windows padding in Ubuntu 22.04 on some GTK3 apps
+  For Firefox it helps to enable normal Title bar in:
+  Settings > More Tools > Customize toolbar
+ */
+decoration {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin: 0px;
+}

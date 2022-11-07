@@ -19,6 +19,9 @@ export EDITOR=nvim
 # add node export path so -g flag works without sudo
 export PATH="$PATH:$HOME/npm/bin"
 
+# add .local/bin required by dragon
+export PATH="$PATH:$HOME/.local/bin"
+
 # add dotfiles export path for my own bash scripts
 export PATH="$PATH:$HOME/dotfiles/bin"
 
