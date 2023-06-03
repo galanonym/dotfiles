@@ -77,7 +77,7 @@ Gnome Nautilus Context Menu
 
 Install
 
-    > sudo apt install xdotool
+    sudo apt install xdotool
 
 ### Settings > Keyboard Shortcuts
 
