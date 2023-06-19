@@ -30,6 +30,7 @@ File editing
     pp - Paste
     dD - Delete
     dT - Trash
+    r - Open file in chosen application
 
 Search
 
