@@ -31,6 +31,7 @@ File editing
     dD - Delete
     dT - Trash
     r - Open file in chosen application
+    :bulkrename - Bulk / Batch rename marked files in vim
 
 Search
 
