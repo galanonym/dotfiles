@@ -70,7 +70,7 @@ Scout Search
 
 Bookmarks
 
-    m<key> - Bookmark current directory
+    F9<key> - Bookmark current directory (custom)
     `<key> - Go to bookmark
     :edit ~/.local/share/ranger/bookmarks - Edit bookmarks
 
