@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# usage >img2webp
+echo Converting all .png files to .webp
+
+# Check if there are any .jpg files in the current directory
+if compgen -G "*.png" > /dev/null; then
+  # Iterate over all .png files in the current directory
+  for file in *.png; do
+    # Use basename to remove the .png extension
+    base=$(basename "$file" .png)
+
+    # Run the cwebp command with -lossless option on each file
+    # The resulting file will have the same base name with .webp extension
+    cwebp "$file" -lossless -o "${base}.webp"
+  done
+fi
+
+# Check if there are any .jpg files in the current directory
+if compgen -G "*.jpg" > /dev/null; then
+  # Iterate over all .jpg files in the current directory
+  for file in *.jpg; do
+    # Use basename to remove the .jpg extension
+    base=$(basename "$file" .jpg)
+
+    # Run the cwebp command on each file
+    # The resulting file will have the same base name with .webp extension
+    cwebp "$file" -o "${base}.webp"
+  done
+fi
