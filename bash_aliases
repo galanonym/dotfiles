@@ -16,3 +16,4 @@ alias vc10_unmount="sudo veracrypt -t -d /media/veracrypt10"
 
 # Tools
 alias shopify-generator="php ~/php/command-line/shopify-generator/shopify-generator.php"
+alias ipbox-kpir="php ~/php/command-line/ipbox-kpir/ipbox-kpir.php"
