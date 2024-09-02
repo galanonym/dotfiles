@@ -10,5 +10,5 @@ if [ -z "$1" ]; then
 fi  
 
 echo Downloading youtube: $1
-/usr/local/bin/yt-dlp --verbose --output "%(artist)s - %(title)s.%(ext)s" --no-mtime --extract-audio --audio-format mp3 $1
+yt-dlp --verbose --output "%(artist)s - %(title)s.%(ext)s" --no-mtime --extract-audio --audio-format mp3 $1
 exit 1
