@@ -16,7 +16,13 @@ alias r='ranger --cmd="chain tab_new; enter_bookmark 1; tab_open 1" --choosedir=
 # fixes keypassx autotype bug
 # setxkbmap us -variant colemak
 
-export EDITOR=nvim
+if command -v nvim >/dev/null 2>&1; then
+    export VISUAL="nvim"
+else
+    export VISUAL="vim"
+fi
+# Ensure EDITOR always matches VISUAL
+export EDITOR="$VISUAL"
 
 # add node export path so -g flag works without sudo
 export PATH="$PATH:$HOME/npm/bin"
